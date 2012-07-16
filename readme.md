@@ -1,0 +1,1 @@
+My presentation for the 19.07.2012 hot topic at bsmo GmbH
