@@ -26,6 +26,8 @@
 	
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
 	<link rel="stylesheet" href="js/lib/deck.js/themes/style/neon.css">
+
+	<link rel="stylesheet" href="css/style.css">
 	
 	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
 	<link rel="stylesheet" href="js/lib/deck.js/themes/transition/horizontal-slide.css">
@@ -40,7 +42,7 @@
 	<p><img src="img/HTML5-Black.png" alt="HTML5 Logo Image" /></p>
 </section>
 
-<section class="slide" id="html5-is-hot">
+<section class="slide" id="what?">
 	<h1>HTML5!? wassendas?</h1>
 </section>
 
@@ -57,47 +59,54 @@
 <section class="slide" id="why">
 	<h2>Warum HTML5?</h2>
 	<ul>
-		<li>Desktop &amp; Mobile</li>
+		<li>Native Desktop &amp; Mobile RIA (Rich Internet Application)</li>
 		<li>Erweiterbar</li>
-		<li>Nativ</li>
+		<li>Einheitlich</li>
+		<li>Performant</li>
+		<li>Semantisch</li>
 	</ul>
 </section>
 
 <section class="slide" id="browser-support">
 	<h2>"Und mein Internet Explorer 6?"</h2>
-	<p>Was passiert mit alten Browsern?</p>
-</section>
-
-<section class="slide" id="cross-browser-support">
-	<h2>Cross-Browser-Support</h2>
-	<p>Unterschiedliche Endger&auml;te mit verschiedene Browser aber "nur" eine Webseite</p>
-	<ul>
-		<li>Responsive Web</li>
+	<p>Wie können unteschiedliche Browser mit abweichenden Funktionalitäten unterstützt werden?</p>
+	<h3>Cross-Browser-Support</h3>
+	<p>Unterschiedliche Endger&auml;te mit verschiedene Browser aber "nur" eine App</p>
+	<ol>
 		<li>Progressive enhancement</li>
 		<li>Graceful degradation</li>
-	</ul>
-</section>
-
-<section class="slide" id="responsive-web">
-	<h2>Responsive Web</h2>
-	<ul>
-		<li>Media Queries <code>@media only screen and (max-width: 400px) { /*apply styles here*/ }</code></li>
-		<li>IE: Conditional Comments <code>&lt;!--[if IE]&gt;&lt;![endif]--&gt;</code></li>
-	</ul>
+		<li>Responsive Web</li>
+	</ol>
 </section>
 
 <section class="slide" id="progressive-enhancement">
 	<h2>Progressive enhancement</h2>
-	<p>Fortlaufende Verbesserung</p>
 	<ul>
 		<li><s>User Agent Sniffing</s> <code>if (jQuery.browser.msie) { /*do IE specific things here*/ }</code></li>
-		<li>Feature Detection <code>if (Modernizr.geolocation) { /*do cool stuff here*/ }</code></li>
+		<li>Feature Detection <code>if ("geolocation" in navigator) { /*do geo stuff here*/ }</code></li>
+		<li><a href="http://remysharp.com/2010/10/08/what-is-a-polyfill/">Polyfills</a> (F&uuml;llwatte)</li>
 	</ul>
 	<p>Tipp: schaut was wo geht und was nicht auf <a href="http://caniuse.com">caniuse.com</a></p>
 </section>
 
 <section class="slide" id="graceful-degradation">
 	<h2>Graceful degradation</h2>
+	<p><code>&lt;input type=&quot;number&quot; name=&quot;myName&quot; style=&quot;border: 1px solid green; border-radius: 5px;&quot;&gt;</code></p>
+	<p class="floatLeft">Chrome 20:<img src="img/Graceful-Chrome.jpg" alt="Number Input in Chrome"></p>
+	<p class="floatLeft">Internet Explorer 9:<img src="img/Graceful-IE9.jpg" alt="Number Input in Chrome"></p>
+	<p class="floatLeft">Internet Explorer 7:<img src="img/Graceful-IE7.jpg" alt="Number Input in Chrome"></p>
+	<p class="clear">Die App bleibt trotz beschänktem Funktionsumfang bzw. vermindertem Aussehen nutzbar.</p>
+</section>
+
+<section class="slide" id="responsive-web">
+	<h2>Responsive Web</h2>
+	<p></p>
+	<ul>
+		<li>Media Queries <code>@media only screen and (max-width: 400px) { /*apply styles here*/ }</code></li>
+		<li>IE: Conditional Comments <code>&lt;!--[if IE]&gt;&lt;![endif]--&gt;</code></li>
+	</ul>
+	<p><a href="http://bostonglobe.com" class="floatLeft"><img src="img/Thumb-BostonGlobe-Large.png" alt=""></a></p>
+	<p><a href="http://bostonglobe.com" class="floatRight"><img src="img/Thumb-BostonGlobe-Small.png" alt=""></a></p>
 </section>
 
 <section class="slide" id="links">
@@ -106,7 +115,10 @@
 		<li><a href="http://caniuse.com/">caniuse.com</a></li>
 		<li><a href="http://html5rocks.com/">html5rocks.com</a></li>
 		<li><a href="http://html5please.com/">html5please.com</a></li>
+		<li><a href="http://css3please.com/">css3please.com</a></li>
 		<li><a href="http://html5boilerplate.com/">html5boilerplate.com</a></li>
+		<li><a href="http://modernizr.com/">modernizr.com</a></li>
+		<li><a href="http://movethewebforward.org/">movethewebforward.org</a></li>
 	</ul>
 </section>
 
@@ -115,6 +127,7 @@
 	<p>Das war's auch schon!</p>
 	<h3>Fragen?</h3>
 	<p>Immer f&uuml;r euch da: <a href="mailto:olivier.tille@springer.com">olivier.tille@springer.com</a></p>
+	<p>Präsentation erstellt mit: <a href="http://imakewebthings.com/deck.js/">deck.js</a></p>
 </section>
 
 <!-- deck.navigation snippet -->
